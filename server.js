@@ -75,7 +75,6 @@ class Server extends EventEmitter {
     
     add(args) {
         this.tasks[this.taskId] = args.join(' ');
-        console.log(this.tasks);
         this.emit('response', `Added the task(s) ${this.tasks[this.taskId]}\nTask Number: ${this.taskId} `);
         this.taskId++;
     }
