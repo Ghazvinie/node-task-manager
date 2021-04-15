@@ -82,7 +82,7 @@ class Server extends EventEmitter {
     ls() {
         if (Object.keys(this.tasks).length === 0) {
             this.emit('response', 'There are no tasks, try adding one');
-        }else {
+        } else {
             this.emit('response', `The tasks are: ${this.tasksString()} `);
         }
     }
